@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Pricing-Payment Methods</title>
+  <style>
+    /* Genel body stili */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      min-height: 50vh; /* Sayfa yüksekliğini en az ekran yüksekliğinde tutar */
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header stili */
+    header {
+      background-color: #00b894;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Ana içerik alanı (orta kısmı) */
+    .main-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Sol ve sağ reklam arasındaki boşluk */
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    /* Sol ve sağ banner reklam alanları */
+    .banner-left, .banner-right {
+      width: 150px;         /* Reklam genişliği */
+      height: 800px;        /* Reklam uzunluğu (yüksekliği) */
+      background-color: #e74c3c; /* Reklam alanı arka planı */
+      border-radius: 8px;
+      text-align: center;
+      line-height: 100px;   /* Yüksekliği ile uyumlu ortalama metin yerleşimi */
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Web Site Paketleri içerik alanı */
+    section {
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Başlık */
+    h2 {
+      text-align: center;
+      color: #2d3436;
+    }
+
+    /* Liste ve metin stilizasyonu */
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 18px;
+    }
+    ul li {
+      margin: 15px 0;
+      padding: 12px;
+      background-color: #dfe6e9;
+      border-radius: 6px;
+    }
+
+    /* Buton link stili */
+    .button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00b894;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 10px 10px 0 0;
+      transition: background-color 0.3s;
+    }
+    .button-link:hover {
+      background-color: #01946f;
+    }
+
+    /* Footer stili */
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #00b894;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logom.jpg" alt="Logo" class="Logo" style="width:300px;height:300px;">
+    <h1>Our Pricing and Payment Methods</h1>
+  </header>
+
+  <div class="main-wrapper">
+    <!-- Sol banner reklam alanı -->
+    <div class="banner-left">
+      Left Advertisement Area (Banner)
+    </div>
+
+    <!-- İçerik kısmı -->
+    <section>
+      <h2>Our Payment Methods and Pricing / Website Packages:</h2>
+      <ul>
+        <h4>Our Payment Methods:</h4>
+        <li>Our Payment Method is via IBAN!</li>
+        <li>Payment is Taken Upfront!</li>
+        <li>Fees are Charged in US Dollars!</li>
+        <h4>Website Packages:</h4>
+        <li>Small 3-Page Website (No Animation) – $350</li>
+        <li>Medium 3-Page Website (No Animation) – $550</li>
+        <li>Large 5-Page Website (No Animation) – $750</li>
+        <li>Each Extra Page – $150</li>
+      </ul>
+      <div class="button-container">
+        <a href="blog_hakkımda.html" class="button-link">View My Portfolio.</a>
+        <a href="mailto:T_E_07TariK20E26S@outlook.com.tr" class="button-link">Contact via Email.</a>
+        <div style="margin-top: 20px;">
+        <a href="https:wa.me/905422764315" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Whatsapp Contact.</a>
+        
+      </div>
+      </div>
+    </section>
+
+    <!-- Sağ banner reklam alanı -->
+    <div class="banner-right">
+      Right Advertisement Area (Banner)
+    </div>
+  </div>
+
+  <footer>
+     <p><span translate="no">© 2025 WEB DESIGN – All Rights Reserved.</span></p>
+  </footer>
+</body>
+</html>
