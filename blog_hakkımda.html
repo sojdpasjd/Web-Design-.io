@@ -38,17 +38,24 @@
       position: relative;
     }
 
-    /* Sol ve sağ banner reklam alanları */
+ /* Sol ve sağ banner reklam alanları */
     .banner-left, .banner-right {
-      width: 150px;         /* Reklam genişliği */
-      height: 800px;        /* Reklam uzunluğu (yüksekliği) */
-      background-color: #e74c3c; /* Reklam alanı rengi */
+      width: 350px;         /* Reklam genişliği */
+      height: 1000px;        /* Reklam uzunluğu (yüksekliği) */
+      background-color: #e74c3c; /* Reklam alanı arka planı */
       border-radius: 8px;
       text-align: center;
       line-height: 100px;   /* Yüksekliği ile uyumlu ortalama metin yerleşimi */
       color: white;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
+      margin:0 30px; /*Sağa ve Solun reklamların en köşe boşluğu!*/
+      @media (max-widht: 768px, max-height: 500px){
+      .banner-left,
+      .banner-right{
+      margin: 0 30px;
+      }
+      }
     }
 
     /* İçerik kısmı */
