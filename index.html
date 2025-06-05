@@ -12,6 +12,7 @@
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="widht=device-width, initial-scale=1.0">
   <style>
+    
     /* Genel body stili */
     body {
       font-family: Arial, sans-serif;
@@ -107,11 +108,30 @@
       padding: 20px;
       text-align: center;
     }
+    /* logo'nun dengeleme kodları */
+    .logo{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding: 10 px 0;
+    }
+    .logo img{
+      max-width:200 px;
+      width: 100%;
+      height: auto;
+    }
+    @media screen and (max-widht:600 p){
+      .logo img{
+      max-width:150 px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logom.jpg" alt="Logo" class="Logo" style="width:300px;height:300px;">
+    <div class="logo">
+    <img src="logom.jpg" alt="Logo"">
+    </div>
     <h1>Our Pricing and Payment Methods</h1>
   </header>
 
