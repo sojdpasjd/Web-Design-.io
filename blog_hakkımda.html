@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <meta name="description" content="Explore the portfolio of Tarık Yılmaz - featuring custom - designed websites and creative graphic
-    design projects for clients around the world.">
+  <meta name="description" content="Explore the portfolio of Tarık Yılmaz - featuring custom-designed websites and creative graphic design projects for clients around the world.">
   <style>
-    /* Genel body stili */
     body {
-      overflow-x:hidden;
+      overflow-x: hidden;
       margin: 0;
       font-family: Arial, sans-serif;
       background: url('arka-plan.jpg') no-repeat center center fixed;
@@ -17,7 +15,6 @@
       position: relative;
       color: white;
     }
-
     body::before {
       content: "";
       position: fixed;
@@ -28,71 +25,53 @@
       background: rgba(0, 0, 0, 0.5);
       z-index: -1;
     }
-    /* arka plan görselinin sağa sola kaymaması için! */
-    img, div{
-    max-width:100%;
-    height:auto;
-    display:block;
+    img, div {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
-
-    /* Ana container (orta kısım) */
-    .main-wrapper  {
+    .main-wrapper {
       display: flex;
       justify-content: center;
       gap: 25px;
       padding: 25px;
-      position: relative;
     }
-
-    /* Sol ve sağ banner reklam alanları */
     .banner-left, .banner-right {
-      width: 300px;         /* Reklam genişliği */
-      height: 600px;        /* Reklam uzunluğu (yüksekliği) */
-      background-color: #e74c3c; /* Reklam alanı arka planı */
+      width: 300px;
+      height: 600px;
+      background-color: #e74c3c;
       border-radius: 8px;
       text-align: center;
-      line-height: 100px;   /* Yüksekliği ile uyumlu ortalama metin yerleşimi */
+      line-height: 100px;
       color: white;
       font-size: 16px;
       font-weight: bold;
-      margin:0 30px; /*Sağa ve Solun reklamların en köşe boşluğu!*/
-      @media (max-widht: 150px, max-height: 400px){
-      .banner-left,
-      .banner-right{
       margin: 0 30px;
-      }
-      }
     }
-    /* İçerik kısmı */
     .container {
       text-align: center;
       padding: 5rem 1rem;
       max-width: 1500px;
-      width: 1500%;
+      width: 100%;
     }
-
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
-
     h2 {
       font-weight: normal;
       font-size: 1.5rem;
       margin-bottom: 2rem;
     }
-
     .skills {
       max-width: 600px;
       margin: 0 auto;
       font-size: 1.1rem;
       line-height: 1.6;
     }
-
     .buttons {
       margin-top: 3rem;
     }
-
     .buttons a {
       text-decoration: none;
       margin: 0.5rem;
@@ -104,11 +83,9 @@
       display: inline-block;
       transition: background 0.3s;
     }
-
     .buttons a:hover {
       background-color: #084e94;
     }
-
     footer {
       margin-top: 4rem;
       text-align: center;
@@ -120,33 +97,34 @@
 <body>
 
   <div class="main-wrapper">
-    <!-- Sol banner reklam alanı -->
+    <!-- Sol Banner -->
     <div class="banner-left">
       Left Advertisement Area (Banner)
     </div>
 
-    <!-- İçerik kısmı -->
+    <!-- İçerik -->
     <div class="container">
-      <h1>My Name İs TARIK, Surname İs YILMAZ</h1>
+      <h1>My Name is TARIK, Surname is YILMAZ</h1>
       <h2>Web Designer & Graphic Designer</h2>
 
       <div class="skills">
         <p>I have experience with HTML, Python, MySQL and C#. I received design and software training at the high school level.
         I am experienced in graphic design, user interface and responsive design.</p>
 
-        <p>I actively use design tools such as Abode Photoshop and Canva. I also have experince in developing mobile - compatible modern websites.</p>
+        <p>I actively use design tools such as Adobe Photoshop and Canva. I also have experience in developing mobile-compatible modern websites.</p>
       </div>
 
-     <div class="button-container">
-        <a href="index.html" class="button-link">Payment Method - Price List.</a>
-        <a href="mailto:T_E_07TariK20E26S@outlook.com.tr" class="button-link">Contact via Email.</a>
-        <div style="margin-top: 20px;">
-        <a href="https://wa.me/905422764315" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Whatsapp Contact.</a>
-        
+      <!-- Spam korumalı iletişim butonları -->
+      <div class="buttons">
+        <a href="#" id="indexbtn">Payment Method - Price List</a>
+        <a href="#" id="emailLink">Contact via Email</a>
+        <a href="#" id="whatsappLink" style="background-color: #25D366;">Contact on WhatsApp</a>
+        <a href="#" id="instagramLink" style="background-color: #C13584;">Visit Instagram</a>
+        <a href="#" id="telegramLink" style="background-color: #0088cc;">Message on Telegram</a>
       </div>
     </div>
 
-    <!-- Sağ banner reklam alanı -->
+    <!-- Sağ Banner -->
     <div class="banner-right">
       Right Advertisement Area (Banner)
     </div>
@@ -155,6 +133,30 @@
   <footer>
     <p><span translate="no">© 2025 WEB DESIGN – All Rights Reserved.</span></p>
   </footer>
+
+  <!-- Spam koruma scripti -->
+  <script>
+    // E-Posta koruma
+    const user = "T_E_07TariK20E26S";
+    const domain = "outlook.com.tr";
+    document.getElementById("emailLink").href = mailto:${user}@${domain};
+
+    // WhatsApp koruma
+    const whatsappNum = "905422764315";
+    document.getElementById("whatsappLink").href = https://wa.me/${whatsappNum};
+
+    // Instagram koruma
+    const instaUser = "0_web_design_0";
+    document.getElementById("instagramLink").href = https://instagram.com/${instaUser};
+
+    // Telegram koruma
+    const telegramUser = "WebDesign0000";
+    document.getElementById("telegramLink").href = https://t.me/${telegramUser};
+
+    // index.html yönlendirme koruma
+    const basePath = window.location.origin;
+    document.getElementById("indexBtn").href = ${basePath}/index.html;
+  </script>
 
 </body>
 </html>
