@@ -116,11 +116,11 @@
 
       <!-- Spam korumalı iletişim butonları -->
       <div class="buttons">
-        <a href="index.html" id="indexBtn">Payment Method - Price List</a>
-        <a href="mailto:T_E_07TariK20E26S@outlook.com.tr" style="backgraund-color: #3950E5"id="emailLink">Contact via Email</a>
-        <a href="https://wa.me/905422764315" id="whatsappLink" style="background-color: #25D366;">Contact on WhatsApp</a>
-        <a href="https://instagram.com/0_web_design_0" id="instagramLink" style="background-color: #FF0044;">Visit Instagram</a>
-        <a href="https://t.me/WebDesign0000" id="telegramLink" style="background-color: #0088cc;">Message on Telegram</a>
+        <a href="#" id="indexBtn">Payment Method - Price List</a>
+        <a href="#" id="emailLink">Contact via Email</a>
+        <a href="#" id="whatsappLink" style="background-color: #25D366;">Contact on WhatsApp</a>
+        <a href="#" id="instagramLink" style="background-color: #C13584;">Visit Instagram</a>
+        <a href="#" id="telegramLink" style="background-color: #0088cc;">Message on Telegram</a>
       </div>
     </div>
 
@@ -136,9 +136,38 @@
 
   <!-- Spam koruma scripti -->
   <script>
-<div class="buttons">
+    const user = "T_E_07TariK20E26S";
+    const domain = "outlook.com.tr";
+    document.getElementById("emailLink").href = mailto:${user}@${domain};
 
+    const whatsappNum = "905422764315";
+    document.getElementById("whatsappLink").href = https://wa.me/${whatsappNum};
+
+    const instaUser = "tariik.yilmaz";
+    document.getElementById("instagramLink").href = https://instagram.com/${instaUser};
+
+    const telegramUser = "tarikyilmaz07";
+    document.getElementById("telegramLink").href = https://t.me/${telegramUser};
+
+    const basePath = window.location.origin;
+    document.getElementById("indexBtn").href = ${basePath}/index.html;
   </script>
+
+  <!-- Mobil özel stiller en aşağıda -->
+  <style>
+    @media screen and (max-width: 600px) {
+      body {
+        background: url('logom-1.jpg') no-repeat center center fixed !important;
+        background-size: cover !important;
+      }
+      body::before {
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .banner-left, .banner-right {
+        display: none !important;
+      }
+    }
+  </style>
 
 </body>
 </html>
