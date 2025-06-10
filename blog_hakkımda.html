@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <meta name="description" content="Explore the portfolio of Tarık Yılmaz - featuring custom-designed websites and creative graphic design projects for clients around the world.">
+  <meta name="description" content="Explore the portfolio of Tarık Yılmaz - featuring custom-designed websites and creative graphic design projects.">
   <style>
     body {
       overflow-x: hidden;
@@ -15,6 +15,7 @@
       position: relative;
       color: white;
     }
+
     body::before {
       content: "";
       position: fixed;
@@ -25,17 +26,20 @@
       background: rgba(0, 0, 0, 0.5);
       z-index: -1;
     }
+
     img, div {
       max-width: 100%;
       height: auto;
       display: block;
     }
+
     .main-wrapper {
       display: flex;
       justify-content: center;
       gap: 25px;
       padding: 25px;
     }
+
     .banner-left, .banner-right {
       width: 300px;
       height: 600px;
@@ -48,30 +52,36 @@
       font-weight: bold;
       margin: 0 30px;
     }
+
     .container {
       text-align: center;
       padding: 5rem 1rem;
       max-width: 1500px;
       width: 100%;
     }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
+
     h2 {
       font-weight: normal;
       font-size: 1.5rem;
       margin-bottom: 2rem;
     }
+
     .skills {
       max-width: 600px;
       margin: 0 auto;
       font-size: 1.1rem;
       line-height: 1.6;
     }
+
     .buttons {
       margin-top: 3rem;
     }
+
     .buttons a {
       text-decoration: none;
       margin: 0.5rem;
@@ -83,14 +93,55 @@
       display: inline-block;
       transition: background 0.3s;
     }
+
     .buttons a:hover {
       background-color: #084e94;
     }
+
     footer {
       margin-top: 4rem;
       text-align: center;
       font-size: 0.9rem;
       color: #ccc;
+    }
+
+    /* MOBİL STİLLERİ */
+    @media screen and (max-width: 600px) {
+      body {
+        background: url('logom-1.jpg') no-repeat center center fixed !important;
+        background-size: cover !important;
+      }
+
+      body::before {
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        padding-top: 180px;
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .main-wrapper {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+      }
+
+      .banner-left,
+      .banner-right {
+        width: 90%;
+        height: 200px;
+        font-size: 14px;
+        line-height: normal;
+      }
+
+      .banner-left {
+        margin-top: 100px; /* Logodan kaçması için */
+      }
     }
   </style>
 </head>
@@ -103,9 +154,7 @@
     </div>
 
     <!-- İçerik -->
-    
-    <div class="container"
-      style="margın-top: 400px;">
+    <div class="container">
       <h1>My Name is TARIK, Surname is YILMAZ</h1>
       <h2>Web Designer & Graphic Designer</h2>
 
@@ -118,11 +167,11 @@
 
       <!-- Spam korumalı iletişim butonları -->
       <div class="buttons">
-        <a href="index.html" id="indexBtn">Payment Method - Price List</a>
-        <a href="mailto:T_E_07TariK20E26S@outlook.com.tr" id="emailLink">Contact via Email</a>
-        <a href="https://wa.me/905422764315" id="whatsappLink" style="background-color: #25D366;">Contact on WhatsApp</a>
-        <a href="https://instagram.com/0_web_design_0" id="instagramLink" style="background-color: #C13584;">Visit Instagram</a>
-        <a href="https://t.me/WebDesign0000" id="telegramLink" style="background-color: #0088cc;">Message on Telegram</a>
+        <a href="#" id="indexBtn">Payment Method - Price List</a>
+        <a href="#" id="emailLink">Contact via Email</a>
+        <a href="#" id="whatsappLink" style="background-color: #25D366;">Contact on WhatsApp</a>
+        <a href="#" id="instagramLink" style="background-color: #C13584;">Visit Instagram</a>
+        <a href="#" id="telegramLink" style="background-color: #0088cc;">Message on Telegram</a>
       </div>
     </div>
 
@@ -138,38 +187,27 @@
 
   <!-- Spam koruma scripti -->
   <script>
+    // E-Posta koruma
     const user = "T_E_07TariK20E26S";
     const domain = "outlook.com.tr";
     document.getElementById("emailLink").href = mailto:${user}@${domain};
 
+    // WhatsApp koruma
     const whatsappNum = "905422764315";
     document.getElementById("whatsappLink").href = https://wa.me/${whatsappNum};
 
+    // Instagram koruma
     const instaUser = "tariik.yilmaz";
     document.getElementById("instagramLink").href = https://instagram.com/${instaUser};
 
+    // Telegram koruma
     const telegramUser = "tarikyilmaz07";
     document.getElementById("telegramLink").href = https://t.me/${telegramUser};
 
+    // index.html yönlendirme
     const basePath = window.location.origin;
     document.getElementById("indexBtn").href = ${basePath}/index.html;
   </script>
-
-  <!-- Mobil özel stiller en aşağıda -->
-  <style>
-    @media screen and (max-width: 600px) {
-      body {
-        background: url('logom-1.jpg') no-repeat center center fixed !important;
-        background-size: cover !important;
-      }
-      body::before {
-        background: rgba(0, 0, 0, 0.3);
-      }
-      .banner-left, .banner-right {
-        display: none !important;
-      }
-    }
-  </style>
 
 </body>
 </html>
